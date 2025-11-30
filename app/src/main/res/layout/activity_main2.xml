@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5"
+    android:gravity="center_horizontal">
+
+    <!-- MAD Input -->
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/editMAD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="🇲🇦 MAD"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EUR Input -->
+    <EditText
+        android:id="@+id/editEUR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="🇪🇺 EUR"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- USD Input -->
+    <EditText
+        android:id="@+id/editUSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="🇺🇸 USD"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💱 Convertir"
+            android:backgroundTint="#007BFF"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🧹 Effacer"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginStart="8dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</LinearLayout>
